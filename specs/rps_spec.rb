@@ -6,12 +6,12 @@ class TestRockPaperScissors < Minitest::Test
 
   def test_game
     @rps = RockPaperScissors.new("rock", "paper")
-    assert_equal("Paper Wins!", @rps.game())
+    assert_equal("Player 2 Wins: Paper Wins!", @rps.game())
   end
 
   def test_game2
     @rps = RockPaperScissors.new("paper", "scissors")
-    assert_equal("Scissors Wins!", @rps.game())
+    assert_equal("Player 2 Wins: Scissors Wins!", @rps.game())
   end
 
   def test_game3
@@ -21,7 +21,7 @@ class TestRockPaperScissors < Minitest::Test
 
   def test_game4
     @rps = RockPaperScissors.new("rock", "scissors")
-    assert_equal("Rock Wins!", @rps.game())
+    assert_equal("Player 1 Wins: Rock Wins!", @rps.game())
   end
 
   def test_game5
